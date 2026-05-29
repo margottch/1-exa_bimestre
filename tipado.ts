@@ -10,7 +10,7 @@ interface Docente {
 }
 
 // ===================================================================
-// 2. CREACIÓN DEL OBJETO DE PRUEBA (Corrección de 'any' a 'Docente')
+// 2. CREACIÓN DEL OBJETO 
 // ===================================================================
 const nuevoDocente: Docente = { 
     id: "INF-207",   
@@ -21,7 +21,7 @@ const nuevoDocente: Docente = {
 };             
 
 // ===================================================================
-// 3. FUNCIÓN DE NEGOCIO (Tipado estricto en parámetros y retorno)
+// 3. FUNCIÓN  (Tipado estricto en parámetros y retorno)
 // ===================================================================
 function evaluarTitularidad(docente: Docente): Docente { 
     // Lógica senior: Si tiene más de 5 años de servicio, obtiene la titularidad
@@ -39,7 +39,7 @@ function evaluarTitularidad(docente: Docente): Docente {
 // ===================================================================
 const docenteEvaluado = evaluarTitularidad(nuevoDocente); 
 
-// Verificación por consola requerida por el examen
+
 console.log(`¿El docente ${docenteEvaluado.nombre} es titular?: ${docenteEvaluado.esTitular}`);
 
 // ===================================================================
