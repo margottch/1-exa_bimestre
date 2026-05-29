@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPM - Evaluación de Programación Web II</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            margin: 0;
+        }
+
+        .card-examen {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 30px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 460px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-top: 0;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 12px;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-estudiante {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            background: #0f172a;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 3px solid #38bdf8;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 8px 0;
+            color: #cbd5e1;
+        }
+
+        .badge-titularidad {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-examen">
+        <h2>Sistema de Auditoría de Personal</h2>
+
+        <div class="info-estudiante">
+            <strong>Estudiante:</strong> Ana Margot Tintaya Choque<br>
+            <strong>Curso:</strong> 25-200-am | <strong>Fecha:</strong> 29/05/2026
+        </div>
+
+        <div id="app">Procesando datos del docente...</div>
+    </div>
+
+    <script type="module" src="./ExamenDocente.ts"></script>
+</body>
+
+</html>
